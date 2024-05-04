@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
 
   gap: ^3.0.1
+  flutter_amazon_iap:
+    git: https://github.com/tuyennvt/flutter_amazon_iap.git
 
 dev_dependencies:
   flutter_test:
