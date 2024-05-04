@@ -1,7 +1,7 @@
 name: tobi_common
 description: "A new Flutter package project."
 version: 0.0.1
-homepage:
+homepage: https://https://github.com/DLL2k/tobi_common.git
 
 environment:
   sdk: '>=3.3.4 <4.0.0'
