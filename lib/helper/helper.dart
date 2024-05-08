@@ -54,3 +54,7 @@ void pop<T extends Object?>(BuildContext context, [T? result]) {
 void popToRoot(BuildContext context) {
   Navigator.of(context).popUntil((route) => route.isFirst);
 }
+
+Future<void> copyToClipboard(String value) {
+  return Clipboard.setData(ClipboardData(text: value));
+}
