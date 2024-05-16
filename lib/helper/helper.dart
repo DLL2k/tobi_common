@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 enum DefaultPageRouteStyle { material, cupertino }
 
@@ -57,4 +58,11 @@ void popToRoot(BuildContext context) {
 
 Future<void> copyToClipboard(String value) {
   return Clipboard.setData(ClipboardData(text: value));
+}
+
+List<T> parseListNotNull<T extends Object?>({
+  required List<dynamic> json,
+  required T Function(Map<String, dynamic> json) fromJson,
+}) {
+  return (json).map((e) => fromJson(e as Map<String, dynamic>)).toList();
 }
