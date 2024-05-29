@@ -69,10 +69,6 @@ List<T> parseListNotNull<T extends Object?>({
 
 String? validateEmpty(String? value) {
   if (value == null || value.isEmpty) {
-    // if (label.isEmpty) {
-    //   var text = label + 'is required!';
-    //   return text;
-    // }
     return 'This field is required!';
   }
   return null;
